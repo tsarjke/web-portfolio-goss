@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+aside, nav, footer, header, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background: #333;
+}
+
+.author h1 {
+  padding: 30px 0 10px 0;
+  margin: 0 0 30px 0;
+  text-align: center;
+  color: #EDB749;
+  font-size: 40px;
+}
+
+.tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tasks__task {
+  background: #252F48;
+  border: 1px solid #37B5A5;
+  margin: 0 0 35px 0;
+}
+
+.answer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 60px;
+}
+
+.answer__header {
+  font-size: 34px;
+  margin: 0 0 35px 0;
+}
+
+.answer__header a {
+  color: #CAD4D6;
+  background: no-repeat 0 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  -webkit-transition: background-size .5s ease;
+  transition: background-size .5s ease;
+}
+
+.answer__header:hover a {
+  background-size: 100% 2px;
+}
+
+.answer__link {
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid #CAD4D6;
+  font-size: 24px;
+  color: #EDB749;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.answer__link:not(:last-child) {
+  margin: 0 35px 0 0;
+}
+
+.answer__link:hover {
+  color: #252F48;
+  background: #EDB749;
+}

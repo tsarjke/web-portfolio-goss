@@ -1,0 +1,72 @@
+@import "_nullstyle.scss";
+
+body {
+	background: #333;
+}
+
+.author {
+	h1 {
+		padding: 30px 0 10px 0;
+		margin: 0 0 30px 0;
+		text-align: center;
+		color: #EDB749;
+		font-size: 40px;
+	}
+}
+
+.tasks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__task {
+		background: #252F48;
+		border: 1px solid #37B5A5;
+		margin: 0 0 35px 0;
+	}
+}
+
+.answer {
+
+	&__content {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 30px 60px;
+	}
+
+	&__header {
+		font-size: 34px;
+		margin: 0 0 35px 0;
+
+		a {
+			color: #CAD4D6;
+			background: no-repeat 0 100%;
+			background-image: linear-gradient(currentColor, currentColor);
+			background-size: 0% 2px;
+			transition: background-size .5s ease;
+		}
+
+		&:hover a {
+			background-size: 100% 2px;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 15px;
+		border: 1px solid #CAD4D6;
+		font-size: 24px;
+		color: #EDB749;
+		transition: all .5s ease;
+
+		&:not(:last-child) {
+			margin: 0 35px 0 0;
+		}
+
+		&:hover {
+			color: #252F48;
+			background: #EDB749;
+		}
+	}
+}
