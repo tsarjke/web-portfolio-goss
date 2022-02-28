@@ -78,9 +78,13 @@ body {
   background: #333;
 }
 
-.author h1 {
-  padding: 30px 0 10px 0;
+.author {
   margin: 0 0 30px 0;
+}
+
+.author h1,
+.author h4 {
+  padding: 30px 0 10px 0;
   text-align: center;
   color: #EDB749;
   font-size: 40px;
